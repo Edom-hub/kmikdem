@@ -43,6 +43,15 @@ function scrollFunction() {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-80px";
+    document.getElementById("navbar").style.top = "-650px";
   }
+}
+
+function burgerMenu() {
+  var btn = document.getElementsByTagName('button')[0];
+  btn.addEventListener('click', onBtnClick)
+}
+
+function onBtnClick(e) {
+  this.classList.toggle('opened');
 }
