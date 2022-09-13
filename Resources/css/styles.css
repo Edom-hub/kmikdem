@@ -20,40 +20,68 @@ html{
   width: 100%;
   height: 650px;
   text-align: center;
-  padding-top: 0;
-  background-image: url("/Resources/Images/blackandwhite/rodrigo-flores-T5qjs-63kqQ-unsplash\ \(1\).jpg");
+  padding-top: 2em;
+  background-image: url("/Resources/Images/blackandwhite/ardi-evans-dfiniOlYi5Q-unsplash.jpg");
+  background-position:center;
   background-repeat:no-repeat;
-  mask-position: center;
+}
+.container .background  {
+  font-size: 28px;
+  padding-top: 1.5em;
+  width: 80%;
+  margin: auto;
+  color:white;
+  display: block;
+
+}
+.container .background .logo-front img {
+  font-size: 28px;
+  padding-top: 0.5em;
+  width: 60%;
+  margin: auto;
+  color:white;
+
+}
+.container .background .info-front {
+  font-size: 28px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 100%;
+  margin: auto;
+  color:white;
+  background-color:#117194b0;
 
 }
 .container .background p {
-  font-size: 22px;
-  padding: 0.5em;
-  width: 40%;
-  margin: auto;
+  font-size: 28px;
+  padding: 0;
+  width: 100%;
+  margin: 0;
   color:white;
 
 }
 .container .background span {
   color: white;
   font-size: 16px;
-  padding: 1em;
-  margin-top: 0.5em;
+
 }
 .container h1{
- color:white;
+ color:rgb(255, 255, 255);
  font-weight:bold;
- text-transform: uppercase;
- width: 40%;
+ text-transform:uppercase;
+ width: 70%;
+ font-size: 36px;
  text-align: center;
  margin:auto;
+ padding: auto;
+ line-height: 40px;
+
 }
 .container p{
   width: 100%;
-  padding:10em;
+  padding:0;
  color: white;
  font-weight: lighter;
- padding-top: 1em;
 }
 ul {
     float: right;
@@ -129,6 +157,12 @@ width: 25%;
     transform: scale(1.2,1.2);
   }
 } */
+.logo-front img{
+width: 30%;
+margin-bottom: 1.5em;
+margin-top: 1.5em;
+filter: drop-shadow(3px, 3px,8px, rgb(50, 50, 50));
+}
 .About {
   width: 80%;
   margin: 1em auto;
@@ -146,7 +180,7 @@ font-weight: lighter;
 display: none;
 }
 .About .About-header .About-info p {
-padding: 1.5em;
+padding: 1.5em 3em;
 font-size: 18px;
 font-weight: normal;
 line-height: 30px;
@@ -155,15 +189,15 @@ margin-bottom: 2em;
 
 .Mission{
   text-align: center;
-  padding: 3em;
+  padding: 2em;
   margin: 2em 0;
   background-position: center;
-  background-image: url("/Resources/Images/blackandwhite/a-n-v-e-s-h-FQq6liOQeDs-unsplash.jpg");
+  background-image: url("/Resources/Images/blackandwhite/ines-bahr-uU-0bCSdqPU-unsplash.jpg");
 }
 .Mission .Mission-container{
   text-align: center;
   padding: 1em;
-  margin: 1em 0;
+  margin: 1em ;
   display: flex;
 }
 .Mission .Mission-container .Mission-header{
@@ -176,17 +210,17 @@ margin-bottom: 2em;
 }
 .Mission .Mission-container .Mission-header .Mission-info{
 background-color: #8a9293;
-padding: 4em;
+padding: 2.5em;
 }
 .Mission .Mission-container .Mission-header .Mission-info h1{
 color: #ffffff;
-padding: 1em;
-font-size: 36px;
+padding: 0.5em;
+font-size: 32px;
 font-weight: lighter;
 }
 .Mission .Mission-container .Mission-header .Mission-info p{
 color: #ffffff;
-padding: 1em;
+padding: 0.5em;
 font-size: 16px;
 line-height: 20px;
 font-weight: lighter;
@@ -207,6 +241,7 @@ font-weight: lighter;
   text-align: center;
   font-weight: normal;
   font-size: 48px;
+  color: #117094;
 }
 .our-info p{
   width: 80%;
@@ -221,16 +256,10 @@ font-weight: lighter;
 
 .Business .Business-header{
   display: flex;
-  margin: 2em;
-  padding: 2em;
+  margin: 1em;
+  padding: 1em;
   gap: 0.5em;
 }
-.Business .Business-header h1{
-color:#333;
-font-size: 24px;
-margin: 1em;
-}
-
 
 .Business .Business-header .Business-info{
   padding: 1em;
@@ -244,7 +273,7 @@ margin: 1em;
   color:#333;
   font-size: 16px;
   font-weight: normal;
-  padding: 3em;
+  padding: 1em;
 }
 
 .Business .Business-header .Business-info .Business-img img{ 
@@ -258,8 +287,9 @@ margin: 1em;
   color: white;
   background-color:#117094;
   padding: 2em;
-
+  
 }
+
 .break-info p{
   margin: 5em;
   text-align: center;
@@ -279,9 +309,8 @@ margin: 1em;
     -ms-flex: 25%; /* IE 10 */
     flex: 25%;
     padding: 0 4px;
-
   }
-    
+  
   .column .center{
     margin-top: 8px;
     margin-bottom: 4px;
@@ -311,7 +340,7 @@ margin: 1em;
     align-content: center;
     align-items: center;
     color: white;
-    padding-top: 237px;
+    padding-top: 175px;
     font-size: 50px;
     width: 80%;
     font-weight: lighter;
@@ -461,9 +490,96 @@ margin: 1em;
     display: none;
   }
   
-  /* Style the buttons */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 25%;
+    top: 25%;
+    width: 50%; /* Full width */
+    height: 70%; /* Full height */
+    margin: auto;
+    overflow: auto; /* Enable scroll if needed */
+    background-image: url("/Resources/Images/blackandwhite/a-n-v-e-s-h-FQq6liOQeDs-unsplash.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    padding-top: 20px;
+    filter: drop-shadow(6px 6px 8px rgba(59, 59, 59, 0.531));
+    border-radius: 0.5em;
+    transition: 0.5s ease-in;
+  }
   
+  /* Modal Content/Box */
+  .modal-content {
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-content .modal-header h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36PX;
+    font-weight: bold;
+    margin: 15% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-content .modal-header p{
+    color: white;
+    background-color:#aa613ddf;
+    padding: 2em 5em;
+    text-align: center;
+    text-transform:none;
+    font-weight: normal;
+    margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+  .modal-logo img{
+    width: 50%;
+    margin: auto 15%;
 
+  }
+  /* Style the horizontal ruler */
+ 
+   
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Style the buttons */
+  .material-symbols-outlined{
+        font-family: 'Material Symbols Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 120px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+    }  
 /* This is the hero image section */
 
 
@@ -476,8 +592,59 @@ margin: 1em;
   'GRAD' 0,
   'opsz' 48
 }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  margin: auto;
+  overflow: auto; /* Enable scroll if needed */
+  background-image: url("/Resources/Images/blackandwhite/a-n-v-e-s-h-FQq6liOQeDs-unsplash.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  padding-top: 20px;
+  filter: drop-shadow(6px 6px 8px rgba(59, 59, 59, 0.531));
+  border-radius: 0.5em;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-content .modal-header h1{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48PX;
+  font-weight: lighter;
+  margin: 3% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-content .modal-header p{
+  color: white;
+  background-color:#117094;
+  padding: 2em;
+  text-align: center;
+  text-transform:none;
+  font-weight: normal;
+  margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+.modal-logo img{
+  width: 50%;
+  margin: auto 15%;
+
+}
 .material-icon{
   display: inline-block;
+}
+.material-symbols-outlined{
+  font-size: small;
 }
     #navbar{
       width: 100%;
@@ -527,6 +694,12 @@ margin: 1em;
     #navbar a{
       color: white;
     }
+    .logo-front img{
+      width: 100%;
+      margin-bottom: 1.5em;
+      margin-top: 1.5em;
+      filter: drop-shadow(3px, 3px,8px, rgb(50, 50, 50));
+      }
       .About .About-header{
         background-image: url("/Resources/Images/blackandwhite/eduardo-gorghetto-vJ3KldG86Eo-unsplash.jpg");
       }
@@ -546,48 +719,54 @@ margin: 1em;
           margin: 0em auto;
           text-align: center;
         }
-        .About .About-header .About-info .About-logo {
+        .About .About-header .About-info .About-logo img{
           display: block;
           text-align: center;
+          width: 20%;
+          margin: auto;
           }
           .Mission{
             text-align: center;
-            padding: 3em;
-            margin: 2em 0;
-            /* background-image: url("/Resources/Images/blackandwhite/a-n-v-e-s-h-FQq6liOQeDs-unsplash.jpg"); */
+            padding: 0.5em;
+            margin: 0.5em 0;
             background-position: center;
+            background-image: none;
           }
           .Mission .Mission-container{
             text-align: center;
-            padding: 1em;
-            margin: 1em 0;
-            display: flex;
+            padding: 0.5em;
+            margin: 0;
+            display: block;
           }
           .Mission .Mission-container .Mission-header{
             text-align: center;
-            padding: 1em;
-            margin: 1em 0;
-            display: flex;
+            padding: 0;
+            margin: 0;
+            display: block;
             gap: 1em;
           
           }
           .Mission .Mission-container .Mission-header .Mission-info{
           background-color: #8a9293;
-          padding: 2em;
+          padding: 0;
+          margin: 0;
           }
           .Mission .Mission-container .Mission-header .Mission-info h1{
           color: #ffffff;
-          padding: 1em;
-          font-size: 36px;
+          padding: 0.5em;
+          font-size: 28px;
           font-weight: lighter;
           }
           .Mission .Mission-container .Mission-header .Mission-info p{
           color: #ffffff;
-          padding: 1em;
-          font-size: 16px;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          font-size: 12px;
           line-height: 20px;
           font-weight: lighter;
           }
+          
           
       .Business .Business-header .Business-info{
         padding: 2em;
@@ -608,15 +787,14 @@ margin: 1em;
         gap: 1em;
       }
     
-      .form{
+      #form-class{
       background-color: #84807e;
     width:100%;
     padding: 0;
     margin: 0;
-    background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-unsplash.jpg);
     }
 
-    .menu { 
+    /* .menu { 
       display:none;
       position: absolute;
       background-color:teal;
@@ -636,20 +814,17 @@ margin: 1em;
 
      .hamburger {
       display: block;
-     }
+     } */
      .contact{
       display: block;
+      text-align: center;
       background-color:#84807e;
     }
-     #contact{
-      display: block;
-      background-color:#84807e;
-    }
-    
+      
     #contact .contact-detail{
     width: 100%;
     margin: 0;
-    padding: 4em;
+    padding: 0;
     text-align: center;
     color: white;
     }
@@ -661,6 +836,10 @@ margin: 1em;
     text-align: center;
     color: white;
     }
+.contact-map{
+  margin: 0;
+
+}
 
     
   }
@@ -691,9 +870,37 @@ margin: 1em;
         padding: 0 4px;
         gap: 10px;
       }
-      .column .img-after img{
+      .column #img-after img{
         width: 100%;
       }
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+        background-color: red;
+      }
+      
+      #img-after:hover .overlay {
+        opacity: 1;
+      }
+      /* .column .img-after span{
+        width: 100%;
+        background-color: #aa613d;
+        position:absolute;
+        display: none;
+      }
+      .column .img-after span:hover{
+        width: 100%;
+        background-color: #aa613d;
+        position:absolute;
+        display: flex;
+      } */
       .column .center{
         margin-top: 8px;
         margin-bottom: 4px;
@@ -760,6 +967,54 @@ margin: 1em;
         margin-top: 8px;
         vertical-align:middle;
         column-width: 100%;
+      }
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 25%;
+        top: 25%;
+        width: 50%; /* Full width */
+        height: 70%; /* Full height */
+        margin: auto;
+        overflow: auto; /* Enable scroll if needed */
+        background-image: url("/Resources/Images/blackandwhite/ines-bahr-uU-0bCSdqPU-unsplash.jpg");
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        padding-top: 20px;
+        filter: drop-shadow(6px 6px 8px rgba(59, 59, 59, 0.531));
+        border-radius: 0.5em;
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+      .modal-content .modal-header h1{
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 48PX;
+        font-weight: lighter;
+        margin: 3% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+      .modal-content .modal-header p{
+        color: white;
+        background-color:#aa613d;
+        padding: 2em;
+        text-align: center;
+        text-transform:none;
+        font-weight: normal;
+        margin: 0  0 ; /* 5% from the top, 15% from the bottom and centered */
+        width: 100%; /* Could be more or less, depending on screen size */
+      }
+      .modal-logo img{
+        width: 50%;
+        margin: auto 15%;
+      
       }
        .material-symbols-outlined {
         font-variation-settings:
@@ -857,7 +1112,7 @@ margin: 1em;
         text-align: center;
               }
       .About .About-header{
-        background-image: url("/Resources/Images/blackandwhite/a-n-v-e-s-h-FQq6liOQeDs-unsplash.jpg");
+        background-image: url("/Resources/Images/blackandwhite/ardi-evans-dfiniOlYi5Q-unsplash.jpg");
         
       }
       .About .About-header .About-info .About-logo {
@@ -874,14 +1129,16 @@ margin: 1em;
         }
       .About .About-header .About-info p {
           color: white;
-          padding: 1.5em;
-          font-size: 16px;
-          line-height: 25px;
+          padding: 3em;
+          font-size: 14px;
+          line-height: 20px;
+          background-color:#117094;
+          margin: auto 2em;
         }
         .Mission{
           text-align: center;
-          padding: 4em;
-          margin: 2em 0;
+          padding: 2em;
+          margin: 1em 0;
           background-position: center;
           background-image: none;
         }
@@ -901,7 +1158,8 @@ margin: 1em;
         }
         .Mission .Mission-container .Mission-header .Mission-info{
         background-color: #8a9293;
-        padding: 3em;
+        padding: 1em;
+        margin: 0.5em 3em;
         }
         .Mission .Mission-container .Mission-header .Mission-info h1{
         color: #ffffff;
@@ -911,7 +1169,9 @@ margin: 1em;
         }
         .Mission .Mission-container .Mission-header .Mission-info p{
         color: #ffffff;
-        padding: 3em;
+        width: 70%;
+        margin: auto;
+        padding: 1em;
         font-size: 16px;
         line-height: 20px;
         font-weight: lighter;
@@ -919,32 +1179,37 @@ margin: 1em;
         
         .Business .Business-header .Business-info{
           padding: 1em;
-          margin: 2em auto;
+          margin: 1em 3em;
+          background-color: #ccc;
         }
         .Business .Business-header .Business-info:hover{
           padding: 1em;
-          background-color:#648993;
+          background-color:#117094;
           color: white;
-          margin: 2em auto;
+          margin: 1em auto;
           border-radius: 10px;
+          background-image: url(/Resources/Images/blackandwhite/diego-catto-1JRQNpbakjM-unsplash.jpg);
 
         }
         .Business .Business-header .Business-info h1{
           color:#333;
-          padding: 1em;
+          font-size: 48px;
           border-radius: 10px;
+          margin: 0;
+          padding: 0;
         }
         .Business .Business-header .Business-info p{
           color:#117094;
-          padding: 1em;
           color: white;
-          padding: 2em 2em;
-          margin: 4em 0;
+          width: 70%;
+          padding: 1em 2em;
+          margin: auto;
+          font-size: 16px;
         }
         .Business .Business-header{
           display: block;
-          margin: 2em;
-          padding: 2em;
+          margin: 1em;
+          padding: 1em;
           gap: 1em;
         }
         /* .Business .Business-header .Business-info:hover{
@@ -998,6 +1263,9 @@ padding: 30px;
 background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-unsplash.jpg);
 }
   }
+
+
+   
 .topnav {
       overflow:visible;
       background-color: #333;
@@ -1161,7 +1429,7 @@ background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-u
   }
 .contact{
   display: flex;
-  background-color:#84807e;
+  background-color:#a09e9d;
 }
 
 .contact .contact-detail{
@@ -1174,17 +1442,16 @@ color: white;
 .contact .contact-detail h1{
 font-size: 48px;
 font-weight: lighter;
-margin: 0;
+margin-bottom: 1.5em;
 padding: 0;
 text-align: center;
 color: white;
 }
 form{
-background-color: #84807e;
+background-color:#117094;
 width: 70%;
 margin: auto;
 padding: 60px;
-background-image: url("/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-unsplash.jpg");
 }
   input[type=text]{
     width: 100%;
@@ -1217,7 +1484,7 @@ background-image: url("/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-
   }
   
   input[type=submit]:hover {
-    background-color:#117094;
+    background-color:#333;
   }
   .our-coffee .list-coffee h1{
     margin:auto;
