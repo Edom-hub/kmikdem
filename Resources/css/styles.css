@@ -21,13 +21,14 @@ html{
   height: 650px;
   text-align: center;
   padding-top: 2em;
-  background-image: url("/Resources/Images/blackandwhite/ardi-evans-dfiniOlYi5Q-unsplash.jpg");
+  background-image: url("/Resources/Images/blackandwhite/Front-image.jpg");
+  background-blend-mode:overlay;
   background-position:center;
   background-repeat:no-repeat;
 }
 .container .background  {
   font-size: 28px;
-  padding-top: 1.5em;
+  padding-top: 0.5em;
   width: 80%;
   margin: auto;
   color:white;
@@ -49,12 +50,11 @@ html{
   width: 100%;
   margin: auto;
   color:white;
-  background-color:#117194b0;
 
 }
 .container .background p {
   font-size: 28px;
-  padding: 0;
+  padding-top: 0.5em;
   width: 100%;
   margin: 0;
   color:white;
@@ -63,6 +63,9 @@ html{
 .container .background span {
   color: white;
   font-size: 16px;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
 
 }
 .container h1{
@@ -100,15 +103,6 @@ li a {
     justify-content: center;
     vertical-align: center;
 }
-/* #navbar {
-  background-color: lightgray;
-  position: fixed;
-  top: -50px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transition: top 0.3s;
-} */
 
 #navbar a {
   float: left;
@@ -127,27 +121,15 @@ li a {
 #navbar a:hover {
   color: black;
 }
-/* .navbar-logo {
-  background-color: #333;
-  position: fixed;
-  top: -50px;
-  width: 100%;
-  display: block;
-  transition: top 0.3s;
-    } */
 
 .navbar-logo{
 width: 25%;
-
 }
-
-
 .navbar-logo img{
    width: 50%;
    height: auto;
    float: left;
-   
-       }
+}
 
 /* @keyframes zoom-me {
   0%{
@@ -175,6 +157,7 @@ padding: 1em;
 padding: 1.5em;
 font-size: 48px;
 font-weight: lighter;
+color: #117094;
 }
 .About .About-header .About-info .About-logo {
 display: none;
@@ -226,6 +209,34 @@ line-height: 20px;
 font-weight: lighter;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap:10px;
+  padding: 10px;
+  margin: 3em;
+}
+.grid-item1 >img{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+}
+.grid-item1 >img::after{
+  background-color:#117094;
+  background-image: url(/Resources/logo/Kmikedem\ logo-blue-01.png);
+  background-blend-mode: multiply;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+}
+
 .Business{
   text-align: center;
 }
@@ -265,15 +276,14 @@ font-weight: lighter;
   padding: 1em;
 }
 .Business .Business-header .Business-info h1{
-  color:#333;
   font-weight: normal;
   padding: 1em;
 }
 .Business .Business-header .Business-info p{
-  color:#333;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   padding: 1em;
+  line-height: 20px;
 }
 
 .Business .Business-header .Business-info .Business-img img{ 
@@ -287,6 +297,9 @@ font-weight: lighter;
   color: white;
   background-color:#117094;
   padding: 2em;
+  background-image: url(/Resources/Images/blackandwhite/a-n-v-e-s-h-FQq6liOQeDs-unsplash.jpg);
+  background-position: center;
+  transition: 0.5s ease-in;
   
 }
 
@@ -295,97 +308,7 @@ font-weight: lighter;
   text-align: center;
   line-height: 2em;
 }
-.row {
-    display: -ms-flexbox; /* IE 10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE 10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-    
-  }
- 
-  /* Create two equal columns that sits next to each other */
-  .column {
-    -ms-flex: 25%; /* IE 10 */
-    flex: 25%;
-    padding: 0 4px;
-  }
-  
-  .column .center{
-    margin-top: 8px;
-    margin-bottom: 4px;
-    text-align: center;
-    width: 100%;
-    height: 650px;
-    background-color:#648993;
-  }
-  .column .center-tahini{
-    margin: 8px 0;
-    text-align: center;
-    width: 100%;
-    height: 650px;
-    background-color:#aa613d;
-  }
-  .column .center-other{
-    margin: 8px 0;
-    text-align: center;
-    width: 100%;
-    height: 757px;
-    background-color:#a09e9d;
-  }
-  .column .center h1{
-    display: inline-block;
-    vertical-align: middle;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    color: white;
-    padding-top: 175px;
-    font-size: 50px;
-    width: 80%;
-    font-weight: lighter;
-  }
-  .column .center-tahini h1{
-    display: inline-block;
-    vertical-align: middle;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    color: white;
-    padding-top: 237px;
-    font-size: 50px;
-    width: 80%;
-    font-weight: lighter;
-  }
-  .column .center-other h1{
-    display: inline-block;
-    vertical-align: middle;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    color: white;
-    padding-top: 237px;
-    font-size: 50px;
-    width: 80%;
-    font-weight: lighter;
-  }
-  .column .center a{
-    color: red;
-  }
-  .column img {
-    margin-top: 4px;
-    vertical-align:middle;
-  }
-  .column img::after {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: #4c9e9e;
-    opacity: 1;
-    background-blend-mode: multiply;
- 
-  }
+
   .header h1{
       text-align: center;
       font-family: Raleway;
@@ -497,41 +420,41 @@ font-weight: lighter;
     left: 25%;
     top: 25%;
     width: 50%; /* Full width */
-    height: 70%; /* Full height */
+    height: 50%; /* Full height */
     margin: auto;
     overflow: auto; /* Enable scroll if needed */
-    background-image: url("/Resources/Images/blackandwhite/a-n-v-e-s-h-FQq6liOQeDs-unsplash.jpg");
-    background-position: center;
+    background-color:#8a9293;
+    background-image: url("/Resources/logo/Kmikedem\ logo-white-04.png");
+    background-blend-mode:multiply;
+    background-position:right;
     background-repeat: none;
-    background-size: cover;
+    background-size:150%;
     padding-top: 20px;
-    filter: drop-shadow(6px 6px 8px rgba(59, 59, 59, 0.531));
+    filter: drop-shadow(6px 6px 8px rgba(59, 59, 59, 0.285));
     border-radius: 0.5em;
     transition: 0.5s ease-in;
   }
   
   /* Modal Content/Box */
   .modal-content {
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
     width: 80%; /* Could be more or less, depending on screen size */
   }
   .modal-content .modal-header h1{
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-size: 36PX;
-    font-weight: bold;
-    margin: 15% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+    font-size: 38PX;
+    font-weight: normal;
+    margin: 15% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
     width: 80%; /* Could be more or less, depending on screen size */
   }
   .modal-content .modal-header p{
     color: white;
-    background-color:#aa613ddf;
-    padding: 2em 5em;
+    padding: 0.5em 3em;
     text-align: center;
     text-transform:none;
     font-weight: normal;
-    margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
     width: 100%; /* Could be more or less, depending on screen size */
   }
   .modal-logo img{
@@ -592,7 +515,7 @@ font-weight: lighter;
   'GRAD' 0,
   'opsz' 48
 }
-.modal {
+#myModal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -602,7 +525,7 @@ font-weight: lighter;
   height: 100%; /* Full height */
   margin: auto;
   overflow: auto; /* Enable scroll if needed */
-  background-image: url("/Resources/Images/blackandwhite/a-n-v-e-s-h-FQq6liOQeDs-unsplash.jpg");
+  background-image: url(/Resources/Images/blackandwhite/diego-catto-2NiVOHcIx4I-unsplash.jpg);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -613,33 +536,33 @@ font-weight: lighter;
 
 /* Modal Content/Box */
 .modal-content {
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  width: 80%; /* Could be more or less, depending on screen size */
+  margin: 0; /* 5% from the top, 15% from the bottom and centered */
+  width: 100%; /* Could be more or less, depending on screen size */
 }
 .modal-content .modal-header h1{
   color: white;
   text-align: center;
   text-transform: uppercase;
-  font-size: 48PX;
-  font-weight: lighter;
-  margin: 3% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
-  width: 80%; /* Could be more or less, depending on screen size */
+  font-size: 14PX;
+  font-weight: normal;
+  margin:0; /* 5% from the top, 15% from the bottom and centered */
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 .modal-content .modal-header p{
   color: white;
-  background-color:#117094;
-  padding: 2em;
+  padding: 0.5em;
   text-align: center;
   text-transform:none;
   font-weight: normal;
-  margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
-  width: 70%; /* Could be more or less, depending on screen size */
+  margin: 0; /* 5% from the top, 15% from the bottom and centered */
+  width: 100%; /* Could be more or less, depending on screen size */
 }
 .modal-logo img{
-  width: 50%;
-  margin: auto 15%;
+  width: 100%;
+  margin: 0;
 
 }
+
 .material-icon{
   display: inline-block;
 }
@@ -702,6 +625,7 @@ font-weight: lighter;
       }
       .About .About-header{
         background-image: url("/Resources/Images/blackandwhite/eduardo-gorghetto-vJ3KldG86Eo-unsplash.jpg");
+        background-blend-mode: multiply;
       }
       .About .About-header .About-info h1 {
         padding: 1em;
@@ -734,7 +658,7 @@ font-weight: lighter;
           }
           .Mission .Mission-container{
             text-align: center;
-            padding: 0.5em;
+            padding: 0.2em;
             margin: 0;
             display: block;
           }
@@ -753,8 +677,8 @@ font-weight: lighter;
           }
           .Mission .Mission-container .Mission-header .Mission-info h1{
           color: #ffffff;
-          padding: 0.5em;
-          font-size: 28px;
+          padding: 0.2em;
+          font-size: 24px;
           font-weight: lighter;
           }
           .Mission .Mission-container .Mission-header .Mission-info p{
@@ -779,6 +703,13 @@ font-weight: lighter;
         padding: 1em;
         border-radius: 10px;
         font-size: 24px;
+      }
+      .Business .Business-header .Business-info p{
+        padding: 0;
+        border-radius: 10px;
+        font-size: 10px;
+        margin: 0;
+
       }
       .Business .Business-header{
         display: block;
@@ -856,23 +787,7 @@ font-weight: lighter;
       display: block;
       text-align: left;
     } */
-    .row {
-        display: -ms-flexbox; /* IE 10 */
-        display:flex;
-        -ms-flex-wrap: wrap; /* IE 10 */
-        flex-wrap: wrap;
-        padding: 0 4px;
-      }
-      .column {
-        display: flex;
-        -ms-flex: 50%; /* IE 10 */
-        flex: 50%;
-        padding: 0 4px;
-        gap: 10px;
-      }
-      .column #img-after img{
-        width: 100%;
-      }
+   
       .overlay {
         position: absolute;
         top: 0;
@@ -901,73 +816,8 @@ font-weight: lighter;
         position:absolute;
         display: flex;
       } */
-      .column .center{
-        margin-top: 8px;
-        margin-bottom: 4px;
-        text-align: center;
-        width: 100%;
-        height: 250px;
-        background-color:#648993;
-        display: none;
-      }
-      .column .center:hover{
-       transform: scale(1.2);
-      }
-      .column .center-tahini{
-        display: none;
-        margin: 8px 0;
-        text-align: center;
-        width: 100%;
-        height: 250px;
-        background-color:#aa613d;
-      }
-      .column .center-other{
-        display: none;
-        margin: 8px 0;
-        text-align: center;
-        width: 100%;
-        height: auto;
-        background-color:#a09e9d;
-      }
-      .column .center h1{
-        display: inline-block;
-        vertical-align: middle;
-       text-align: center;
-        color: white;
-        padding: 40px;
-        font-size: 18px;
-        width: 80%;
-        font-weight: lighter;
-      }
-      .column .center-tahini h1{
-        display: inline-block;
-        vertical-align: middle;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        color: white;
-        padding-top: 30px;
-        font-size: 18px;
-        width: 80%;
-        font-weight: lighter;
-      }
-      .column .center-other h1{
-        display: inline-block;
-        vertical-align: middle;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        color: white;
-        padding-top: 30px;
-        font-size: 18px;
-        width: 80%;
-        font-weight: lighter;
-      }
-      .column img {
-        margin-top: 8px;
-        vertical-align:middle;
-        column-width: 100%;
-      }
+      
+
       .modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
@@ -975,7 +825,7 @@ font-weight: lighter;
         left: 25%;
         top: 25%;
         width: 50%; /* Full width */
-        height: 70%; /* Full height */
+        height: 60%; /* Full height */
         margin: auto;
         overflow: auto; /* Enable scroll if needed */
         background-image: url("/Resources/Images/blackandwhite/ines-bahr-uU-0bCSdqPU-unsplash.jpg");
@@ -996,7 +846,7 @@ font-weight: lighter;
         color: white;
         text-align: center;
         text-transform: uppercase;
-        font-size: 48PX;
+        font-size: 32PX;
         font-weight: lighter;
         margin: 3% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
         width: 80%; /* Could be more or less, depending on screen size */
@@ -1027,7 +877,7 @@ font-weight: lighter;
         font-family: 'Material Symbols Outlined';
         font-weight: normal;
         font-style: normal;
-        font-size: 48px;
+        font-size: 32px;
         line-height: 0;
         letter-spacing: normal;
         text-transform: none;
@@ -1045,11 +895,11 @@ font-weight: lighter;
         }
       .material-icon span{
         display: flex;
-        background-color: #117094;
-        width: 50%;
+        width: 60%;
         height: 60px;
         justify-content: space-between;
-        font-size: 36px;
+        font-size: 28px;
+        font-weight: lighter;
         line-height: 0;
       }
 
@@ -1110,9 +960,12 @@ font-weight: lighter;
       .About {
         width: 80%;
         text-align: center;
+        
               }
       .About .About-header{
-        background-image: url("/Resources/Images/blackandwhite/ardi-evans-dfiniOlYi5Q-unsplash.jpg");
+        background-image: url("/Resources/Images/blackandwhite/eduardo-gorghetto-vJ3KldG86Eo-unsplash.jpg");
+        background-blend-mode: multiply;
+        background-color: #117094;
         
       }
       .About .About-header .About-info .About-logo {
@@ -1129,7 +982,7 @@ font-weight: lighter;
         }
       .About .About-header .About-info p {
           color: white;
-          padding: 3em;
+          padding: 5em;
           font-size: 14px;
           line-height: 20px;
           background-color:#117094;
@@ -1138,14 +991,14 @@ font-weight: lighter;
         .Mission{
           text-align: center;
           padding: 2em;
-          margin: 1em 0;
+          margin: 0.5em 0;
           background-position: center;
           background-image: none;
         }
         .Mission .Mission-container{
           text-align: center;
           padding: 1em;
-          margin: 1em 0;
+          margin: 0.5em 0;
           display: block;
         }
         .Mission .Mission-container .Mission-header{
@@ -1153,7 +1006,7 @@ font-weight: lighter;
           padding: 1em;
           margin: 1em 0;
           display: block;
-          gap: 1em;
+          gap: 0.5em;
         
         }
         .Mission .Mission-container .Mission-header .Mission-info{
@@ -1185,6 +1038,7 @@ font-weight: lighter;
         .Business .Business-header .Business-info:hover{
           padding: 1em;
           background-color:#117094;
+          background-blend-mode: multiply;
           color: white;
           margin: 1em auto;
           border-radius: 10px;
@@ -1192,7 +1046,6 @@ font-weight: lighter;
 
         }
         .Business .Business-header .Business-info h1{
-          color:#333;
           font-size: 48px;
           border-radius: 10px;
           margin: 0;
