@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-  background-color:#dedede;
+  background-color:rgb(237, 237, 237);
 }
 html{
     scroll-behavior: smooth;
@@ -18,28 +18,29 @@ html{
 .container {
   background-color:#117094;
   width: 100%;
-  height: 650px;
-  text-align: center;
-  padding-top: 2em;
-  background-image: url("/Resources/Images/blackandwhite/Front-image.jpg");
-  background-blend-mode:overlay;
+  height: 450px;
+  text-align: left;
+  padding-top: 4.5em;
+  background-image: url("/Resources/Images/Farmers-hand.jpg");
+  background-blend-mode:soft-light;
   background-position:center;
+  background-size: cover;
   background-repeat:no-repeat;
 }
 .container .background  {
   font-size: 28px;
-  padding-top: 0.5em;
+  padding-top: 0;
   width: 80%;
   margin: auto;
   color:white;
-  display: block;
+  display: flex;
 
 }
 .container .background .logo-front img {
   font-size: 28px;
   padding-top: 0.5em;
-  width: 60%;
-  margin: auto;
+  width: 120%;
+  margin:0.3em;
   color:white;
 
 }
@@ -54,7 +55,7 @@ html{
 }
 .container .background p {
   font-size: 28px;
-  padding-top: 0.5em;
+  padding-top: 0;
   width: 100%;
   margin: 0;
   color:white;
@@ -72,12 +73,12 @@ html{
  color:rgb(255, 255, 255);
  font-weight:bold;
  text-transform:uppercase;
- width: 70%;
- font-size: 36px;
- text-align: center;
- margin:auto;
+ width: 100%;
+ font-size: 32px;
+ text-align: left;
+ margin:0.2em auto;
  padding: auto;
- line-height: 40px;
+ line-height: 35px;
 
 }
 .container p{
@@ -175,7 +176,7 @@ margin-bottom: 2em;
   padding: 2em;
   margin: 2em 0;
   background-position: center;
-  background-image: url("/Resources/Images/blackandwhite/ines-bahr-uU-0bCSdqPU-unsplash.jpg");
+  background-image: url("/Resources/Images/blackandwhite/blackandwhite-background.jpg");
 }
 .Mission .Mission-container{
   text-align: center;
@@ -212,24 +213,11 @@ font-weight: lighter;
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap:10px;
-  padding: 10px;
-  margin: 3em;
+  grid-template-rows: auto;
+  padding: 5px;
+  margin: 2em;
 }
 .grid-item1 >img{
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  object-fit: cover;
-  width: 100%;
-  max-width: 100%;
-}
-.grid-item1 >img::after{
-  background-color:#117094;
-  background-image: url(/Resources/logo/Kmikedem\ logo-blue-01.png);
-  background-blend-mode: multiply;
-  padding: 10px;
   font-size: 30px;
   text-align: center;
   object-fit: cover;
@@ -237,6 +225,46 @@ font-weight: lighter;
   max-width: 100%;
 }
 
+.container-over {
+  position: relative;
+  width: 100%;
+}
+
+.grid-item1 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:#aa613d;
+  background-blend-mode:multiply;
+  overflow: hidden;
+  width: 100%;
+  max-width: 110%;
+  height: 0;
+  transition: 1s ease;
+}
+
+.container-over:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .Business{
   text-align: center;
 }
@@ -276,7 +304,8 @@ font-weight: lighter;
   padding: 1em;
 }
 .Business .Business-header .Business-info h1{
-  font-weight: normal;
+  font-weight:normal;
+  text-transform: uppercase;
   padding: 1em;
 }
 .Business .Business-header .Business-info p{
@@ -297,9 +326,11 @@ font-weight: lighter;
   color: white;
   background-color:#117094;
   padding: 2em;
-  background-image: url(/Resources/Images/blackandwhite/a-n-v-e-s-h-FQq6liOQeDs-unsplash.jpg);
+  background-image: url("/Resources/Images/Business-now.jpg");
+  background-blend-mode: multiply;
   background-position: center;
-  transition: 0.5s ease-in;
+  background-size:cover ;
+  transition: 0.5s ease;
   
 }
 
@@ -337,6 +368,7 @@ font-weight: lighter;
     color: #fff;
     height: 80px;
     overflow: hidden;
+    z-index: 1;
    }
   .navbar .logo {
     align-items: center;
@@ -506,327 +538,25 @@ font-weight: lighter;
 /* This is the hero image section */
 
 
-  @media screen and (max-width: 480px) {
-    
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-#myModal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  margin: auto;
-  overflow: auto; /* Enable scroll if needed */
-  background-image: url(/Resources/Images/blackandwhite/diego-catto-2NiVOHcIx4I-unsplash.jpg);
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  padding-top: 20px;
-  filter: drop-shadow(6px 6px 8px rgba(59, 59, 59, 0.531));
-  border-radius: 0.5em;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  margin: 0; /* 5% from the top, 15% from the bottom and centered */
-  width: 100%; /* Could be more or less, depending on screen size */
-}
-.modal-content .modal-header h1{
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14PX;
-  font-weight: normal;
-  margin:0; /* 5% from the top, 15% from the bottom and centered */
-  width: 50%; /* Could be more or less, depending on screen size */
-}
-.modal-content .modal-header p{
-  color: white;
-  padding: 0.5em;
-  text-align: center;
-  text-transform:none;
-  font-weight: normal;
-  margin: 0; /* 5% from the top, 15% from the bottom and centered */
-  width: 100%; /* Could be more or less, depending on screen size */
-}
-.modal-logo img{
-  width: 100%;
-  margin: 0;
-
-}
-
-.material-icon{
-  display: inline-block;
-}
-.material-symbols-outlined{
-  font-size: small;
-}
-    #navbar{
-      width: 100%;
-      background-color: #c15308;
-      transition: top 0.3s;
-    }
-    .navbar-menu {
-      display: flex;
-      float: right;
-      width: 100%;
-      height: 30px;
-    }
-    #navbar a {
-      float: left;
-      display: flex;
-      color: #feffff;
-      text-align: center;
-      padding: 20px;
-      margin: auto;
-      text-decoration: none;
-      font-size: 17px;
-    }
-    ul{
-      text-align: right;
-      padding:3em;
-      height: 80px;
-    }
-    li{
-      display: flex;
-      width: 100%;
-      background-color: #c15308;
-      text-align: center;
-    }
-    li a{
-      display: flex;
-      padding: 2em;
-      width: 100%;
-      text-align: center;
-         }
-    .navbar-logo{
-      display: flex;
-    }
-    .navbar-logo{
-    width:100%;
-    margin:auto;
-    }
-    #navbar a{
-      color: white;
-    }
-    .logo-front img{
-      width: 100%;
-      margin-bottom: 1.5em;
-      margin-top: 1.5em;
-      filter: drop-shadow(3px, 3px,8px, rgb(50, 50, 50));
-      }
-      .About .About-header{
-        background-image: url("/Resources/Images/blackandwhite/eduardo-gorghetto-vJ3KldG86Eo-unsplash.jpg");
-        background-blend-mode: multiply;
-      }
-      .About .About-header .About-info h1 {
-        padding: 1em;
-        font-size: 36px;
-        font-weight: lighter;
-        color: white;
-        }
-      .About .About-header .About-info p {
-        padding: 1em;
-        font-size: 16px;
-        font-weight: lighter;
-        color: white;
-        }
-        .About{
-          margin: 0em auto;
-          text-align: center;
-        }
-        .About .About-header .About-info .About-logo img{
-          display: block;
-          text-align: center;
-          width: 20%;
-          margin: auto;
-          }
-          .Mission{
-            text-align: center;
-            padding: 0.5em;
-            margin: 0.5em 0;
-            background-position: center;
-            background-image: none;
-          }
-          .Mission .Mission-container{
-            text-align: center;
-            padding: 0.2em;
-            margin: 0;
-            display: block;
-          }
-          .Mission .Mission-container .Mission-header{
-            text-align: center;
-            padding: 0;
-            margin: 0;
-            display: block;
-            gap: 1em;
-          
-          }
-          .Mission .Mission-container .Mission-header .Mission-info{
-          background-color: #8a9293;
-          padding: 0;
-          margin: 0;
-          }
-          .Mission .Mission-container .Mission-header .Mission-info h1{
-          color: #ffffff;
-          padding: 0.2em;
-          font-size: 24px;
-          font-weight: lighter;
-          }
-          .Mission .Mission-container .Mission-header .Mission-info p{
-          color: #ffffff;
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          font-size: 12px;
-          line-height: 20px;
-          font-weight: lighter;
-          }
-          
-          
-      .Business .Business-header .Business-info{
-        padding: 2em;
-        border-radius: 10px;
-        margin: 1em auto;
-        background-color:#648993;
-      }
-      .Business .Business-header .Business-info h1{
-        color:#84807e;
-        padding: 1em;
-        border-radius: 10px;
-        font-size: 24px;
-      }
-      .Business .Business-header .Business-info p{
-        padding: 0;
-        border-radius: 10px;
-        font-size: 10px;
-        margin: 0;
-
-      }
-      .Business .Business-header{
-        display: block;
-        margin: 1em;
-        padding: 1em;
-        gap: 1em;
-      }
-    
-      #form-class{
-      background-color: #84807e;
-    width:100%;
-    padding: 0;
-    margin: 0;
-    }
-
-    /* .menu { 
-      display:none;
-      position: absolute;
-      background-color:teal;
-      right: 0;
-      left: 0;
-      text-align: center;
-      padding: 16px 0;
-     }
-     .menu li:hover {
-      display: inline-block;
-      background-color:#4c9e9e;
-      transition: 0.3s ease;
-     }
-     .menu li + li {
-      margin-top: 12px;
-     }
-
-     .hamburger {
-      display: block;
-     } */
-     .contact{
-      display: block;
-      text-align: center;
-      background-color:#84807e;
-    }
-      
-    #contact .contact-detail{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: white;
-    }
-    .contact .contact-detail h1{
-    font-size: 48px;
-    font-weight: lighter;
-    margin: 2em;
-    padding: 2em;
-    text-align: center;
-    color: white;
-    }
-.contact-map{
-  margin: 0;
-
-}
-
-    
-  }
+  
   
   @media screen and (max-width: 980px) {
-    /* .topnav .responsive {position: relative;}
-    .topnav .responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    } */
-   
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        transition: .5s ease;
-        background-color: red;
-      }
+ 
       
       #img-after:hover .overlay {
         opacity: 1;
       }
-      /* .column .img-after span{
-        width: 100%;
-        background-color: #aa613d;
-        position:absolute;
-        display: none;
-      }
-      .column .img-after span:hover{
-        width: 100%;
-        background-color: #aa613d;
-        position:absolute;
-        display: flex;
-      } */
-      
+     
 
       .modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
         z-index: 1; /* Sit on top */
-        left: 25%;
+        left: 15%;
         top: 25%;
-        width: 50%; /* Full width */
+        width: 70%; /* Full width */
         height: 60%; /* Full height */
-        margin: auto;
+        margin: 1em auto;
         overflow: auto; /* Enable scroll if needed */
         background-image: url("/Resources/Images/blackandwhite/ines-bahr-uU-0bCSdqPU-unsplash.jpg");
         background-position: center;
@@ -853,7 +583,6 @@ font-weight: lighter;
       }
       .modal-content .modal-header p{
         color: white;
-        background-color:#aa613d;
         padding: 2em;
         text-align: center;
         text-transform:none;
@@ -928,6 +657,79 @@ font-weight: lighter;
         font-size: 17px;
       }
       
+      .container {
+        background-color:#117094;
+        width: 100%;
+        height: 450px;
+        text-align: left;
+        padding-top: 3.5em;
+        background-image: url("/Resources/Images/Farmers-hand.jpg");
+        background-blend-mode:soft-light;
+        background-position:center;
+        background-size: cover;
+        background-repeat:no-repeat;
+      }
+      .container .background  {
+        font-size: 28px;
+        padding-top: 0;
+        width: 90%;
+        margin: auto;
+        color:white;
+        display: flex;
+      
+      }
+      .container .background .logo-front img {
+        font-size: 28px;
+        padding-top: 0.5em;
+        width: 130%;
+        margin: auto;
+        color:white;
+      
+      }
+      .container .background .info-front {
+        font-size: 28px;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        width: 100%;
+        margin: auto;
+        color:white;
+      
+      }
+      .container .background p {
+        font-size: 20px;
+        padding-top: 0;
+        width: 100%;
+        margin: 0;
+        color:white;
+      
+      }
+      .container .background span {
+        color: white;
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+      
+      }
+      .container h1{
+       color:rgb(255, 255, 255);
+       font-weight:bold;
+       text-transform:uppercase;
+       width: 100%;
+       font-size: 26px;
+       text-align: left;
+       margin:0.2em auto;
+       padding: auto;
+       line-height: 25px;
+      
+      }
+      .container p{
+        width: 100%;
+        padding:0;
+       color: white;
+       font-weight: lighter;
+      }
+
       ul{
         text-align: right;
         padding:3em;
@@ -957,82 +759,105 @@ font-weight: lighter;
       #navbar a{
         color: white;
       }
-      .About {
-        width: 80%;
+
+      .Mission{
         text-align: center;
-        
-              }
-      .About .About-header{
-        background-image: url("/Resources/Images/blackandwhite/eduardo-gorghetto-vJ3KldG86Eo-unsplash.jpg");
-        background-blend-mode: multiply;
-        background-color: #117094;
-        
+        padding: 1em;
+        margin: 1em 0;
+        background-position: center;
+        background-image: url("/Resources/Images/blackandwhite/blackandwhite-background.jpg");
       }
-      .About .About-header .About-info .About-logo {
-        display: block;
+      .Mission .Mission-container{
+        text-align: center;
+        padding: 1em;
+        margin: 1em ;
+        display: flex;
+      }
+      .Mission .Mission-container .Mission-header{
+        text-align: center;
+        padding: 1em;
+        margin: 1em 0;
+        display: flex;
+        gap: 1em;
+      
+      }
+      .Mission .Mission-container .Mission-header .Mission-info{
+      background-color: #8a9293;
+      padding: 1em;
+      }
+      .Mission .Mission-container .Mission-header .Mission-info h1{
+      color: #ffffff;
+      padding: 0.5em;
+      font-size: 32px;
+      font-weight: lighter;
+      }
+      .Mission .Mission-container .Mission-header .Mission-info p{
+      color: #ffffff;
+      padding: 0.5em;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: lighter;
+      }
+      
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto ;
+          grid-template-rows: auto;
+          padding: 0;
+          margin: 3em;
         }
-      .About .About-header .About-info {
-        display: block;
-        padding: 1.5em;
+        .grid-item1 >img{
+          font-size: 30px;
+          text-align: center;
+          object-fit: cover;
+          width: 100%;
+          max-width: 100%;
         }
-      .About .About-header .About-info h1 {
+
+        .container-over {
+          position: relative;
+          width: 100%;
+        }
+        
+        .grid-item1 {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        
+        .overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color:#aa613d;
+          background-blend-mode:multiply;
+          overflow: hidden;
+          width: 100%;
+          max-width: 100%;
+          height: 0;
+          transition: 1s ease;
+        }
+        
+        .container-over:hover .overlay {
+          height: 100%;
+        }
+        
+        .text {
           color: white;
-          padding: 1em;
-          font-size: 42px;
-        }
-      .About .About-header .About-info p {
-          color: white;
-          padding: 5em;
           font-size: 14px;
-          line-height: 20px;
-          background-color:#117094;
-          margin: auto 2em;
-        }
-        .Mission{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
           text-align: center;
-          padding: 2em;
-          margin: 0.5em 0;
-          background-position: center;
-          background-image: none;
         }
-        .Mission .Mission-container{
-          text-align: center;
-          padding: 1em;
-          margin: 0.5em 0;
-          display: block;
-        }
-        .Mission .Mission-container .Mission-header{
-          text-align: center;
-          padding: 1em;
-          margin: 1em 0;
-          display: block;
-          gap: 0.5em;
-        
-        }
-        .Mission .Mission-container .Mission-header .Mission-info{
-        background-color: #8a9293;
-        padding: 1em;
-        margin: 0.5em 3em;
-        }
-        .Mission .Mission-container .Mission-header .Mission-info h1{
-        color: #ffffff;
-        padding: 1em;
-        font-size: 36px;
-        font-weight: lighter;
-        }
-        .Mission .Mission-container .Mission-header .Mission-info p{
-        color: #ffffff;
-        width: 70%;
-        margin: auto;
-        padding: 1em;
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: lighter;
-        }
-        
+      
         .Business .Business-header .Business-info{
           padding: 1em;
-          margin: 1em 3em;
+          margin: 3em 3em;
           background-color: #ccc;
         }
         .Business .Business-header .Business-info:hover{
@@ -1042,11 +867,11 @@ font-weight: lighter;
           color: white;
           margin: 1em auto;
           border-radius: 10px;
-          background-image: url(/Resources/Images/blackandwhite/diego-catto-1JRQNpbakjM-unsplash.jpg);
+          background-image: url("/Resources/Images/Business-now.jpg");
 
         }
         .Business .Business-header .Business-info h1{
-          font-size: 48px;
+          font-size: 42px;
           border-radius: 10px;
           margin: 0;
           padding: 0;
@@ -1082,7 +907,7 @@ font-weight: lighter;
           width: 50%;
         }
         .container{
-          display: none;
+          display: flex;
         }
         .About {
           background-image: none;
@@ -1101,11 +926,20 @@ font-weight: lighter;
         text-align: center;
         color: white;
         }
+       
 .contact .contact-detail h1{
-font-size: 48px;
+font-size: 32px;
 font-weight: lighter;
 margin: 0;
 padding-bottom: 3em;
+text-align: center;
+color: white;
+}
+.contact .contact-detail p{
+font-size: 24px;
+font-weight: lighter;
+margin: 0;
+padding-bottom: 0.2em;
 text-align: center;
 color: white;
 }
@@ -1117,6 +951,426 @@ background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-u
 }
   }
 
+
+  @media screen and (max-width: 500px) {
+ 
+      
+    #img-after:hover .overlay {
+      opacity: 1;
+    }
+   
+
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 10%;
+      top: 25%;
+      width: 80%; /* Full width */
+      height: 45%; /* Full height */
+      margin: 0.2em auto;
+      overflow: auto; /* Enable scroll if needed */
+      background-image: url("/Resources/Images/blackandwhite/ines-bahr-uU-0bCSdqPU-unsplash.jpg");
+      background-position: center;
+      background-repeat: none;
+      background-size: cover;
+      padding-top: 10px;
+      filter: drop-shadow(6px 6px 8px rgba(59, 59, 59, 0.531));
+      border-radius: 0.5em;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    .modal-content .modal-header h1{
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 28PX;
+      font-weight: lighter;
+      margin: 3% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    .modal-content .modal-header p{
+      color: white;
+      padding: 1em;
+      text-align: center;
+      text-transform:none;
+      font-weight: normal;
+      margin: 0  0 ; /* 5% from the top, 15% from the bottom and centered */
+      width: 100%; /* Could be more or less, depending on screen size */
+    }
+    .modal-logo img{
+      width: 50%;
+      margin: auto 15%;
+    
+    }
+     .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 32px;
+      line-height: 0;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;}
+    .material-icon{
+      display: flex;
+      width: 100%;
+      height: 30px;
+      justify-content: space-between;
+      }
+    .material-icon span{
+      display: flex;
+      width: 60%;
+      height: 60px;
+      justify-content: space-between;
+      font-size: 28px;
+      font-weight: lighter;
+      line-height: 0;
+    }
+
+    #navbar{
+      width: 100%;
+      height: 80px;
+      transition: top 0.3s;
+      background-color:#117094;
+      display: flex;
+      text-align: center;
+    }
+    .navbar-menu {
+      display: none;
+      float: right;
+      width: 100%;
+      height: auto;
+    }
+    #navbar a {
+      float: right;
+      display: flex;
+      color: #feffff;
+      text-align: center;
+      padding: 20px;
+      margin: auto;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .container {
+      background-color:#117094;
+      width: 100%;
+      height: 375px;
+      text-align: center;
+      padding-top: 0.5em;
+      background-image: url("/Resources/Images/Farmers-hand.jpg");
+      background-blend-mode:soft-light;
+      background-position:center;
+      background-size: cover;
+      background-repeat:no-repeat;
+    }
+    .container .background  {
+      font-size: 28px;
+      padding-top: 0;
+      width: 80%;
+      margin: auto;
+      color:white;
+      display: block;
+    
+    }
+    .container .background .logo-front img {
+      font-size: 28px;
+      padding-top: 0.5em;
+      width: 80%;
+      margin: auto;
+      color:white;
+    
+    }
+    .container .background .info-front {
+      font-size: 28px;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      width: 100%;
+      margin: auto;
+      color:white;
+    
+    }
+    .container .background p {
+      font-size: 20px;
+      padding-top: 0;
+      width: 100%;
+      margin: 0;
+      color:white;
+    
+    }
+    .container .background span {
+      color: white;
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      line-height: 0;
+    
+    }
+    .container h1{
+     color:rgb(255, 255, 255);
+     font-weight:bold;
+     text-transform:uppercase;
+     width: 100%;
+     font-size: 26px;
+     text-align: center;
+     margin:0.2em auto;
+     padding: auto;
+     line-height: 25px;
+         
+    }
+    .container p{
+      width: 100%;
+      padding:0;
+     color: white;
+     font-weight: lighter;
+    }
+
+    ul{
+      text-align: right;
+      padding:3em;
+      float: right;
+      margin-top: 2em;
+      width: 80%;
+    }
+    li{
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    li a{
+      display: block;
+      padding: 2em;
+      width: 100%;
+      text-align: center;
+      border: white;
+         }
+    .navbar-logo{
+      display: none;
+    }
+    .navbar-logo{
+    width:100%;
+    margin:auto;
+    }
+    #navbar a{
+      color: white;
+    }
+
+    .About .About-header .About-info p {
+      padding: 1em 2em;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 20px;
+      margin-bottom: 2em;
+      }
+      .About .About-header .About-info h1 {
+        padding: 1em;
+        font-size: 38px;
+        font-weight: lighter;
+        color: #117094;
+        }
+    .Mission{
+      text-align: center;
+      padding: 1em;
+      margin: 1em 0;
+      background-position: center;
+      background-image: url("/Resources/Images/blackandwhite/blackandwhite-background.jpg");
+    }
+    .Mission .Mission-container{
+      text-align: center;
+      padding: 1em;
+      margin: 1em ;
+      display: block;
+    }
+    .Mission .Mission-container .Mission-header{
+      text-align: center;
+      padding: 1em;
+      margin: 1em 0;
+      display: block;
+      gap: 1em;
+    
+    }
+    .Mission .Mission-container .Mission-header .Mission-info{
+    background-color: #8a9293;
+    padding: 1em;
+    }
+    .Mission .Mission-container .Mission-header .Mission-info h1{
+    color: #ffffff;
+    padding: 0.5em;
+    font-size: 32px;
+    font-weight: lighter;
+    }
+    .Mission .Mission-container .Mission-header .Mission-info p{
+    color: #ffffff;
+    padding: 0.5em;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: lighter;
+    }
+    
+      .grid-container {
+        display: block;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto;
+        padding: 10px;
+        margin: 1.5em;
+      }
+      .grid-item1 >img{
+        font-size: 30px;
+        text-align: center;
+        object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .container-over {
+        position: relative;
+        width: 100%;
+      }
+      
+      .grid-item1 {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color:#aa613d;
+        background-blend-mode:multiply;
+        overflow: hidden;
+        width: 100%;
+        max-width: 100%;
+        height: 0;
+        transition: 1s ease;
+      }
+      
+      .container-over:hover .overlay {
+        height: 100%;
+      }
+      
+      .text {
+        color: white;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .Business .Business-header .Business-info{
+        padding: 1em;
+        margin: 2em 1em;
+        background-color: #ccc;
+      }
+      .Business .Business-header .Business-info:hover{
+        padding: 1em;
+        background-color:#117094;
+        background-blend-mode: multiply;
+        color: white;
+        margin: 1em auto;
+        border-radius: 10px;
+        background-image: url("/Resources/Images/Business-now.jpg");
+
+      }
+      .Business .Business-header .Business-info h1{
+        font-size: 38px;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0;
+      }
+      .Business .Business-header .Business-info p{
+        color:#117094;
+        color: white;
+        width: 80%;
+        padding: 2em 1em;
+        margin: auto;
+        font-size: 16px;
+      }
+      .Business .Business-header{
+        display: block;
+        margin: 1em;
+        padding: 1em;
+        gap: 1em;
+      }
+      /* .Business .Business-header .Business-info:hover{
+        cursor: pointer;
+        color: white;
+        background-color:#84807e7d;
+        padding: 2em;
+      } */
+    .row {
+        display: -ms-flexbox; /* IE 10 */
+        display: block;
+        -ms-flex-wrap: wrap; /* IE 10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      .navbar{
+        width: 50%;
+      }
+      .container{
+        display: flex;
+      }
+      .About {
+        background-image: none;
+        width: 100%;
+        color: grey;
+      }
+      #contact{
+        display: block;
+      }
+      
+      .contact .contact-detail{
+      width: 100%;
+      margin: 0;
+      padding: 1em;
+      text-align: center;
+      color: white;
+      }
+      .contact .contact-detail .contact-map{
+      width: 100%;
+      margin:0;
+      padding: 0.2em;
+      text-align: center;
+      color: white;
+      }
+.contact .contact-detail h1{
+font-size: 48px;
+font-weight: lighter;
+margin: 0;
+padding-bottom: 3em;
+text-align: center;
+color: white;
+}
+#form-class{
+width:100%;
+margin: 0;
+padding: 35px;
+background-color: #117094;
+}
+}
 
    
 .topnav {
@@ -1189,26 +1443,21 @@ background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-u
   #hero-container {
     width: 100%;
     height: 350px;
-    background-image: url("/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-unsplash.jpg");
+    background-image: url("/Resources/Images/blackandwhite/Sesame-hero-2.jpg");
+    background-color:#c1a99ca7;
+    background-blend-mode: luminosity;
+    background-position: cover;
+    background-position: center;
   }
   #hero-container-coffee{
     width: 100%;
     height: 350px;
-    background-image: url("/Resources/Images/rodrigo-flores-sn87TQ_o7zs-unsplash.jpg");
+    background-image: url("/Resources/Images/blackandwhite/Coffee-page-hero.jpg");
+    background-color:#875e4ac3;
+    background-blend-mode:overlay;
     background-position: center;
   }
-  /* #hero-container-coffee::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 350px;
-    background-color: black;
-    opacity: 0.6;
-    background-blend-mode:darken;
-    z-index: 1;
-  } */
+
   #hero-container > .hero-header{
     z-index: 100;
   }
@@ -1226,21 +1475,20 @@ background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-u
   } */
   #hero-container .hero-header h1{
     width: 100%;
-    height: 200px;
-    z-index:2;
-  }
-  #hero-container .hero-header h1{
-    width: 100%;
     padding-top: 150px;
     margin:auto;
     color:white;
     text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
   }
+
   #hero-container .hero-header p{
     width: 50%;
     text-align: center;
-    padding-bottom: 150px;
-    color:lightgray;
+    padding-bottom: 5em;
+    padding-top: 1.5em;
+    color:white;
     margin: auto;
   }
   #hero-container-coffee .hero-header h1{
@@ -1254,12 +1502,15 @@ background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-u
     margin:auto;
     color:white;
     text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
   }
   #hero-container-coffee .hero-header p{
     width: 50%;
     text-align: center;
-    padding-bottom: 150px;
-    color:lightgray;
+    padding-bottom: 5em;
+    padding-top: 1.5em;
+    color:white;
     margin: auto;
   }
   table {
@@ -1277,9 +1528,11 @@ background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-u
   }
   
   tr:nth-child(even) {
-    background-color: #117094;
+    background-color:#aa613d;
     color: white;
+    filter: drop-shadow(8px, 8px,8px);
   }
+
 .contact{
   display: flex;
   background-color:#a09e9d;
@@ -1339,6 +1592,9 @@ padding: 60px;
   input[type=submit]:hover {
     background-color:#333;
   }
+  .our-coffee {
+    margin: 4em;
+  }
   .our-coffee .list-coffee h1{
     margin:auto;
     width: 50%;
@@ -1346,6 +1602,7 @@ padding: 60px;
     font-weight: lighter;
     padding: 30px;
     text-align: center;
+    color: #117094;
   }
 
   .footer{
