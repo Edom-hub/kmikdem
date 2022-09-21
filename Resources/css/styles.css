@@ -663,7 +663,7 @@ font-weight: lighter;
         height: 450px;
         text-align: left;
         padding-top: 3.5em;
-        background-image: url("/Resources/Images/Farmers-hand.jpg");
+        background-image: url("../Images/blackandwhite/Farmers-hand.jpg");
         background-blend-mode:soft-light;
         background-position:center;
         background-size: cover;
@@ -765,7 +765,7 @@ font-weight: lighter;
         padding: 1em;
         margin: 1em 0;
         background-position: center;
-        background-image: url("/Resources/Images/blackandwhite/blackandwhite-background.jpg");
+        background-image: url("../Images/blackandwhite/Grey-background.jpg");
       }
       .Mission .Mission-container{
         text-align: center;
@@ -867,7 +867,7 @@ font-weight: lighter;
           color: white;
           margin: 1em auto;
           border-radius: 10px;
-          background-image: url("/Resources/Images/Business-now.jpg");
+          background-image: url("../Images/blackandwhite/Business-now.jpg");
 
         }
         .Business .Business-header .Business-info h1{
@@ -1075,7 +1075,7 @@ background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-u
       height: 375px;
       text-align: center;
       padding-top: 0.5em;
-      background-image: url("/Resources/Images/Farmers-hand.jpg");
+      background-image: url("../Images/blackandwhite/Farmers-hand.jpg");
       background-blend-mode:soft-light;
       background-position:center;
       background-size: cover;
@@ -1190,7 +1190,7 @@ background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-u
       padding: 1em;
       margin: 1em 0;
       background-position: center;
-      background-image: url("/Resources/Images/blackandwhite/blackandwhite-background.jpg");
+      background-image: url("../Images/blackandwhite/Grey-background.jpg");
     }
     .Mission .Mission-container{
       text-align: center;
@@ -1291,7 +1291,7 @@ background-image: url(/Resources/Images/blackandwhite/hengyao-tang-BB3SLw6Ii_I-u
         color: white;
         margin: 1em auto;
         border-radius: 10px;
-        background-image: url("/Resources/Images/Business-now.jpg");
+        background-image: url("../Images/blackandwhite/Business-now.jpg");
 
       }
       .Business .Business-header .Business-info h1{
