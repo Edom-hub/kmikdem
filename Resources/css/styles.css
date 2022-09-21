@@ -21,7 +21,7 @@ html{
   height: 450px;
   text-align: left;
   padding-top: 4.5em;
-  background-image: url("/Resources/Images/Farmers-hand.jpg");
+  background-image: url("../Images/blackandwhite/Farmers-hand.jpg");
   background-blend-mode:soft-light;
   background-position:center;
   background-size: cover;
@@ -176,7 +176,7 @@ margin-bottom: 2em;
   padding: 2em;
   margin: 2em 0;
   background-position: center;
-  background-image: url("/Resources/Images/blackandwhite/blackandwhite-background.jpg");
+  background-image: url("../Images/blackandwhite/Grey-background.jpg");
 }
 .Mission .Mission-container{
   text-align: center;
@@ -326,7 +326,7 @@ font-weight: lighter;
   color: white;
   background-color:#117094;
   padding: 2em;
-  background-image: url("/Resources/Images/Business-now.jpg");
+  background-image: url("../Images/blackandwhite/Business-now.jpg");
   background-blend-mode: multiply;
   background-position: center;
   background-size:cover ;
@@ -1443,7 +1443,7 @@ background-color: #117094;
   #hero-container {
     width: 100%;
     height: 350px;
-    background-image: url("/Resources/Images/blackandwhite/Sesame-hero-2.jpg");
+    background-image: url("../Images/blackandwhite/Sesame-hero-2.jpg");
     background-color:#c1a99ca7;
     background-blend-mode: luminosity;
     background-position: cover;
@@ -1452,7 +1452,7 @@ background-color: #117094;
   #hero-container-coffee{
     width: 100%;
     height: 350px;
-    background-image: url("/Resources/Images/blackandwhite/Coffee-page-hero.jpg");
+    background-image: url("../Images/blackandwhite/Coffee-page-hero.jpg");
     background-color:#875e4ac3;
     background-blend-mode:overlay;
     background-position: center;
